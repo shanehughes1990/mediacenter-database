@@ -1,0 +1,12 @@
+name: CAM
+description: Matches CAM/TS/TC style low-quality theatrical releases.
+tags:
+- Quality
+- Banned
+conditions:
+- name: CAM
+  negate: false
+  pattern: (?<=^|[\s._-])(cam|camrip|hdcam|ts|telesync|telecine|tc|hdts|tsrip|workprint)(?=$|[\s._-])
+  required: true
+  type: release_title
+tests: []
