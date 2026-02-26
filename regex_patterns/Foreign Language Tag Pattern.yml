@@ -8,9 +8,15 @@ tests:
 - id: 1
   input: Leroy.2006.German.DVDRip.XVID
   expected: true
+  passes: true
+  lastRun: '2026-02-26T16:50:17.000000'
 - id: 2
   input: Anime.Movie.2024.VOSTFR.1080p.WEB-DL
   expected: true
+  passes: true
+  lastRun: '2026-02-26T16:50:17.000000'
 - id: 3
   input: Classic.Movie.1999.English.480p.DVD
   expected: false
+  passes: true
+  lastRun: '2026-02-26T16:50:17.000000'
