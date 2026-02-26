@@ -1,5 +1,5 @@
 name: Standard Definition Preferred
-description: SD-first profile. Blocks CAM and 4K/UHD releases and prefers standard-definition quality before HD fallbacks.
+description: SD-first profile. Includes shared, Sonarr-specific, and Radarr-specific quality families so no qualities are omitted.
 tags:
 - SD
 - Standard Definition
@@ -52,6 +52,48 @@ qualities:
     name: WEBDL-1080p
   - id: 10
     name: Bluray-1080p
+  - id: 8
+    name: Remux-1080p
+  - id: 7
+    name: Bluray-1080p Remux
+- id: -4
+  name: Radarr Source-Specific (Lowest Priority)
+  description: Radarr-specific theatrical and source qualities included for completeness.
+  qualities:
+  - id: 30
+    name: WORKPRINT
+  - id: 29
+    name: CAM
+  - id: 28
+    name: TELESYNC
+  - id: 27
+    name: TELECINE
+  - id: 26
+    name: DVDSCR
+  - id: 25
+    name: REGIONAL
+  - id: 23
+    name: DVDR
+  - id: 6
+    name: BRDISK
+- id: -5
+  name: 2160p and RAWHD (Lowest Priority)
+  description: Sonarr-specific and Radarr-specific 2160p tiers included for completeness.
+  qualities:
+  - id: 5
+    name: HDTV-2160p
+  - id: 4
+    name: WEBRip-2160p
+  - id: 3
+    name: WEBDL-2160p
+  - id: 2
+    name: Bluray-2160p
+  - id: 1
+    name: Remux-2160p
+  - id: 0
+    name: Bluray-2160p Remux
+  - id: -6
+    name: RAWHD
 upgrade_until:
   id: -1
   name: SD Lowest First
