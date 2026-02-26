@@ -1,0 +1,12 @@
+name: Foreign Language Title Tags
+description: Penalizes releases with common foreign-language title tags to reduce mismatched/manual-import grabs while still allowing fallback.
+tags:
+- Language
+- Safety
+conditions:
+- name: Foreign Language Tag Pattern
+  negate: false
+  pattern: (?i)\b(german|french|italian|spanish|latino|russian|polish|turkish|japanese|korean|hindi|tamil|telugu|vostfr|ita|ger|rus)\b
+  required: true
+  type: release_title
+tests: []

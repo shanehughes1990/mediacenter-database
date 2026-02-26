@@ -10,11 +10,13 @@ upgradeUntilScore: 0
 minScoreIncrement: 1
 custom_formats:
 - name: Not English
-  score: -10000
+  score: -8000
 - name: Not Only English
   score: 0
 - name: Not Only English (Missing)
   score: 0
+- name: Foreign Language Title Tags
+  score: -1500
 custom_formats_radarr: []
 custom_formats_sonarr: []
 qualities:
