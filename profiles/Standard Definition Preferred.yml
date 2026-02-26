@@ -54,8 +54,6 @@ qualities:
     name: Bluray-1080p
   - id: 8
     name: Remux-1080p
-  - id: 7
-    name: Bluray-1080p Remux
 - id: -4
   name: Radarr Source-Specific (Lowest Priority)
   description: Radarr-specific theatrical and source qualities included for completeness.
@@ -90,8 +88,6 @@ qualities:
     name: Bluray-2160p
   - id: 1
     name: Remux-2160p
-  - id: 0
-    name: Bluray-2160p Remux
   - id: -6
     name: RAWHD
 upgrade_until:
