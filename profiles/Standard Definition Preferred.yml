@@ -94,4 +94,4 @@ upgrade_until:
   id: -1
   name: SD Lowest First
   description: Lowest SD first, then incrementally better SD sources.
-language: must_original
+language: prefer_english
