@@ -5,44 +5,12 @@ tags:
 - Standard Definition
 - Backwards Upgrade
 upgradesAllowed: true
-minCustomFormatScore: 20000
-upgradeUntilScore: 888888
+minCustomFormatScore: 0
+upgradeUntilScore: 0
 minScoreIncrement: 1
-custom_formats:
-- name: SDTV
-  score: 300000
-- name: SDTV Tier 1
-  score: 290000
-- name: SD Quality Tier 1
-  score: 280000
-- name: SD Quality Tier 2
-  score: 270000
-- name: DVD
-  score: 260000
-- name: DVD Remux
-  score: 250000
-- name: 480p WEB-DL
-  score: 240000
-- name: 480p Bluray
-  score: 230000
-- name: 576p Bluray
-  score: 220000
-- name: CAM
-  score: -999999
-- name: 4K UHD
-  score: -999999
-- name: 2160p WEB-DL
-  score: -999999
-- name: 2160p Bluray
-  score: -999999
-- name: 2160p Remux
-  score: -999999
-- name: UHD Bluray
-  score: -999999
+custom_formats: []
 custom_formats_radarr: []
-custom_formats_sonarr:
-- name: Season Pack
-  score: 10
+custom_formats_sonarr: []
 qualities:
 - id: -1
   name: SD Lowest First
