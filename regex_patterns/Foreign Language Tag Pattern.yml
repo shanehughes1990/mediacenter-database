@@ -6,11 +6,11 @@ tags:
 - Safety
 tests:
 - id: 1
-	input: Leroy.2006.German.DVDRip.XVID
-	expected: true
+  input: Leroy.2006.German.DVDRip.XVID
+  expected: true
 - id: 2
-	input: Anime.Movie.2024.VOSTFR.1080p.WEB-DL
-	expected: true
+  input: Anime.Movie.2024.VOSTFR.1080p.WEB-DL
+  expected: true
 - id: 3
-	input: Classic.Movie.1999.English.480p.DVD
-	expected: false
+  input: Classic.Movie.1999.English.480p.DVD
+  expected: false

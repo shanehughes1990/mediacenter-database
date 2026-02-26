@@ -9,4 +9,10 @@ conditions:
   pattern: Foreign Language Tag Pattern
   required: true
   type: release_title
-tests: []
+tests:
+- id: 1
+  input: Leroy.2006.German.DVDRip.XVID
+  expected: true
+- id: 2
+  input: Example.Movie.2001.English.480p.DVD
+  expected: false

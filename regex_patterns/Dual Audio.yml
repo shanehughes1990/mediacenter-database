@@ -4,11 +4,11 @@ description: Matches releases with dual-audio or multi-language indicators in ti
 tags: []
 tests:
 - id: 1
-	input: Attack.on.Titan.S04.1080p.BluRay.Dual-Audio.DTS-HD
-	expected: true
+  input: Attack.on.Titan.S04.1080p.BluRay.Dual-Audio.DTS-HD
+  expected: true
 - id: 2
-	input: The.Hunger.Games.2012.MULTi.1080p.BluRay.DTS
-	expected: true
+  input: The.Hunger.Games.2012.MULTi.1080p.BluRay.DTS
+  expected: true
 - id: 3
-	input: Single.Language.Release.2020.1080p.WEB-DL
-	expected: false
+  input: Single.Language.Release.2020.1080p.WEB-DL
+  expected: false
