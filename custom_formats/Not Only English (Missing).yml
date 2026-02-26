@@ -16,4 +16,10 @@ conditions:
   pattern: Dual Audio
   required: true
   type: release_title
-tests: []
+tests:
+- id: 1
+  input: Attack.on.Titan.S04.1080p.BluRay.Dual-Audio.DTS-HD
+  expected: true
+- id: 2
+  input: Example.Movie.2001.English.1080p.WEB-DL
+  expected: false

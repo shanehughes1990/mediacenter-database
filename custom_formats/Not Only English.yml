@@ -16,4 +16,7 @@ conditions:
   negate: false
   required: true
   type: language
-tests: []
+tests:
+- id: 1
+  input: Example.Movie.2001.1080p.WEB-DL
+  expected: true
