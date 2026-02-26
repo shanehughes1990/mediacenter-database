@@ -6,7 +6,7 @@ tags:
 conditions:
 - name: CAM
   negate: false
-  pattern: (?<=^|[\s._-])(cam|camrip|hdcam|ts|telesync|telecine|tc|hdts|tsrip|workprint)(?=$|[\s._-])
+  pattern: CAM
   required: true
   type: release_title
 tests: []

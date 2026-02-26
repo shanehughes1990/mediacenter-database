@@ -6,7 +6,7 @@ tags:
 conditions:
 - name: 4K UHD
   negate: false
-  pattern: (?<=^|[\s._-])(2160p|4k|uhd)(?=$|[\s._-])
+  pattern: 4K UHD
   required: true
   type: release_title
 tests: []

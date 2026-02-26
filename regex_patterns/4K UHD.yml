@@ -1,0 +1,7 @@
+name: 4K UHD
+pattern: (?<=^|[\s._-])(2160p|4k|uhd)(?=$|[\s._-])
+description: Matches 2160p, 4K, and UHD release labels.
+tags:
+- Resolution
+- Banned
+tests: []

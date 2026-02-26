@@ -1,0 +1,7 @@
+name: CAM
+pattern: (?<=^|[\s._-])(cam|camrip|hdcam|ts|telesync|telecine|tc|hdts|tsrip|workprint)(?=$|[\s._-])
+description: Matches CAM, telesync, telecine, and related low-quality theatrical release labels.
+tags:
+- Quality
+- Banned
+tests: []
