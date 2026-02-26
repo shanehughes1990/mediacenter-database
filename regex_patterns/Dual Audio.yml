@@ -1,0 +1,5 @@
+name: Dual Audio
+pattern: \b((multi[^a-zA-Z]*)|(dual[\s.-](audio|complete)))\b
+description: Matches releases with dual-audio or multi-language indicators in title.
+tags: []
+tests: []

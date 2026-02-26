@@ -6,7 +6,7 @@ tags:
 conditions:
 - name: Foreign Language Tag Pattern
   negate: false
-  pattern: (?i)\b(german|french|italian|spanish|latino|russian|polish|turkish|japanese|korean|hindi|tamil|telugu|vostfr|ita|ger|rus)\b
+  pattern: Foreign Language Tag Pattern
   required: true
   type: release_title
 tests: []

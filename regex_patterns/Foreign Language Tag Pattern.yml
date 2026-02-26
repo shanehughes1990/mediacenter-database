@@ -1,0 +1,7 @@
+name: Foreign Language Tag Pattern
+pattern: (?i)\b(german|french|italian|spanish|latino|russian|polish|turkish|japanese|korean|hindi|tamil|telugu|vostfr|ita|ger|rus)\b
+description: Matches common foreign-language indicators in release titles.
+tags:
+- Language
+- Safety
+tests: []
