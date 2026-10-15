@@ -1,34 +1,26 @@
 # Mediacenter Database
 
-Personal Profilarr Compliant Database (PCD) for building and maintaining custom Sonarr/Radarr configuration.
+Personal Profilarr v2 database for Sonarr and Radarr.
 
-This repository is the source of truth for:
-- custom formats
-- regex patterns
-- quality profiles
-- media management settings
+Profilarr v2 reads `pcd.json` and `ops/`. The YAML directories are the v1 definitions kept for reference. v2 cannot load that YAML.
 
-## Goal
+The live policy is:
 
-Use the `Dictionarry-Hub/profilarr` app with this repo as the linked database, so all profile logic is versioned and reusable across your media stack.
+- `Standard Definition Preferred` is the default. Order is SD, then 720p, then 1080p. Upgrades stop at SD.
+- `720p Preferred` is optional. Order is 720p, then 1080p, then SD.
+- `1080p Preferred` is optional. Order is 1080p, then 720p, then SD.
+- English is preferred by score. Non-English releases are not hard-rejected.
+- 4K, BR-DISK, and Raw-HD are disabled.
+- Disc-image titles are rejected.
 
 ## Repository Layout
 
-- `custom_formats/` → format definitions and conditions
-- `regex_patterns/` → reusable regex entities referenced by formats
-- `profiles/` → quality profile scoring and upgrade behavior
-- `media_management/` → naming, quality definitions, and misc media settings
-- `templates/` → starter templates for new entities
-- `scripts/` → local helper tooling
+- `pcd.json` → v2 database manifest
+- `ops/` → append-only SQL that Profilarr v2 compiles
+- `custom_formats/`, `regex_patterns/`, `profiles/` → v1 YAML archive
+- `media_management/` → naming and size settings not synced by this database
 - `submodules/database/` → upstream Dictionarry reference database
 - `submodules/docs/` → mirrored docs snapshot for local reference
-
-## Workflow
-
-1. Create or tweak regex/custom format/profile YAML.
-2. Keep cross-file references valid (`name` values are treated as IDs).
-3. Commit changes using the repo convention from `CONTRIBUTING.md`.
-4. Sync from Profilarr to Sonarr/Radarr.
 
 ## Docs Mirror
 
