@@ -1,0 +1,21 @@
+name: Disc Image
+description: Rejects releases whose title is a disc image or a named DVD or Blu-ray disc size.
+tags:
+- Disc
+- Rejection
+conditions:
+- name: Disc Image
+  negate: false
+  pattern: Disc Image
+  required: true
+  type: release_title
+tests:
+- id: 1
+  input: Sailor.Moon.S01E01-E08.NTSC.USA.DVD9-AndreMor
+  expected: true
+- id: 2
+  input: Show.Name.S01E01.480p.WEB.x264
+  expected: false
+- id: 3
+  input: Movie.Name.2001.BD50.ISO
+  expected: true
