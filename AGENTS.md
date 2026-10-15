@@ -1,7 +1,3 @@
----
-kind: agents
----
-
 # 🌟 mediacenter-database agent guidelines
 
 Hello, and thank you for helping with this repo. The tone can be warm. The rules below stay exact.
