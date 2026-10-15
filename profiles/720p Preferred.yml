@@ -1,0 +1,88 @@
+name: 720p Preferred
+description: 720p-first profile. English is preferred. 1080p is used when no 720p release exists, and SD only after that. 4K is not allowed. Disc images are rejected. This is not the default profile.
+tags:
+- 720p
+- Backwards Upgrade
+upgradesAllowed: true
+minCustomFormatScore: -10000
+upgradeUntilScore: 0
+minScoreIncrement: 1
+custom_formats:
+- name: Disc Image
+  score: -100000
+- name: Not English
+  score: -8000
+- name: Not Only English
+  score: 0
+- name: Not Only English (Missing)
+  score: 0
+- name: Foreign Language Title Tags
+  score: -1500
+custom_formats_radarr: []
+custom_formats_sonarr: []
+qualities:
+- id: -1
+  name: 720p Preferred
+  description: Preferred tier. Lowest 720p source first, then incrementally better 720p sources.
+  qualities:
+  - id: 16
+    name: HDTV-720p
+  - id: 15
+    name: WEBRip-720p
+  - id: 14
+    name: WEBDL-720p
+  - id: 13
+    name: Bluray-720p
+- id: -2
+  name: 1080p Fallback
+  description: Used only when no 720p release is available.
+  qualities:
+  - id: 12
+    name: HDTV-1080p
+  - id: 11
+    name: WEBRip-1080p
+  - id: 9
+    name: WEBDL-1080p
+  - id: 10
+    name: Bluray-1080p
+  - id: 8
+    name: Remux-1080p
+- id: -3
+  name: SD Last Resort
+  description: Used only when no 720p or 1080p release is available.
+  qualities:
+  - id: 24
+    name: SDTV
+  - id: 22
+    name: DVD
+  - id: 19
+    name: WEBDL-480p
+  - id: 12
+    name: WEBRip-480p
+  - id: 18
+    name: Bluray-480p
+  - id: 17
+    name: Bluray-576p
+- id: -4
+  name: Radarr Source-Specific (Lowest Priority)
+  description: Radarr theatrical and screener qualities, below SD.
+  qualities:
+  - id: 30
+    name: WORKPRINT
+  - id: 29
+    name: CAM
+  - id: 28
+    name: TELESYNC
+  - id: 27
+    name: TELECINE
+  - id: 26
+    name: DVDSCR
+  - id: 25
+    name: REGIONAL
+  - id: 23
+    name: DVDR
+upgrade_until:
+  id: -1
+  name: 720p Preferred
+  description: Preferred tier. Lowest 720p source first, then incrementally better 720p sources.
+language: any
